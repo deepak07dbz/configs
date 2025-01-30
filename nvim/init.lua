@@ -1,5 +1,2 @@
-require("deepak.plugins-setup")
-require("deepak.core.options")
-require("deepak.core.colorscheme")
-require("deepak.core.keymaps")
-require("deepak.plugins.nvim-tree")
+require("deepak.core")
+require("deepak.lazy")

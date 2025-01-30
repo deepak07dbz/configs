@@ -10,9 +10,11 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.termguicolors = true
+vim.opt.background = "dark"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.showmode = false
 
 vim.opt.backspace = "indent,eol,start"
 
