@@ -1,0 +1,39 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 10
+padding.y = 10
+startup_mode = "Maximized"
+
+option_as_alt = "Both"
+decorations = "Buttonless"
+
+opacity = 0.8
+blur = true
+
+[cursor]
+style = {shape = "Block", blinking = "Always"}
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+size = 17
+
+[[hints.enabled]]
+command = "open" 
+hyperlinks = true
+post_processing = true
+persist = true
+mouse.enabled = true
+binding = { key = "O", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+[keyboard]
+bindings = [
+{ key= "W", mods= "Command", action= "None" }
+]
+
+[general]
+import = [
+  "~/.config/alacritty/themes/themes/nightfly.toml"
+]
