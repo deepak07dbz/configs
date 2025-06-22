@@ -19,7 +19,11 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export MANPATH="/usr/local/share/man:$MANPATH"
 autoload -Uz compinit && compinit
 
+# alias
 alias vim=nvim
+alias ss="ssh -i ~/pf/test_pk -o StrictHostKeyChecking=no"
+alias c=clear
+alias e=exit
 
 # directory check (off)
 ZSH_HIGHLIGHT_STYLES[path]=none
@@ -28,11 +32,11 @@ ZSH_HIGHLIGHT_STYLES[path]=none
 export LS_COLORS="di=38;5;32:fi=38;5;15:ln=38;5;39:pi=38;5;226:so=38;5;135:bd=38;5;248:cd=38;5;241:ex=38;5;33"
 alias ls="ls --color=auto"
 
-#ssh
-alias ss="ssh -i ~/pf/test_pk"
+# k8s
 alias k=kubectl
-alias c=clear
 export KUBECONFIG="$HOME/kc"
+export KUBE_EDITOR="nvim"
+export GOPRIVATE=github.com/platform9/*
 
 # vi mode
 bindkey -v
@@ -40,3 +44,7 @@ bindkey '^R' history-incremental-search-backward
 
 bindkey -M viins "^[[A" history-search-backward
 bindkey -M viins "^[[B" history-search-forward
+
+# shell
+# disable ctrl+d
+set -o ignoreeof
