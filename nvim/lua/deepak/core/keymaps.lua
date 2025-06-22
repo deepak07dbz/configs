@@ -19,6 +19,14 @@ keymap.set("n", "<leader>to", ":tabnew<CR>", {desc = "new tab"})
 keymap.set("n", "<leader>tx", ":tabclose<CR>", {desc = "close tab"})
 keymap.set("n", "<leader>tn", ":tabn<CR>", {desc = "next tab"})
 keymap.set("n", "<leader>tp", ":tabp<CR>", {desc = "prev tab"})
+keymap.set("n", "<leader>1", "1gt", { noremap = true, silent = true })
+keymap.set("n", "<leader>2", "2gt", { noremap = true, silent = true })
+keymap.set("n", "<leader>3", "3gt", { noremap = true, silent = true })
+keymap.set("n", "<leader>4", "4gt", { noremap = true, silent = true })
+
+--vertical scroll
+keymap.set("n", "<C-d>", "20jzz", { noremap = true, silent = true })
+keymap.set("n", "<C-u>", "20kzz", { noremap = true, silent = true })
 
 --force hjkl
 --keymap.set("i", "<Up>", "<Nop>")
@@ -29,3 +37,4 @@ keymap.set("n", "<leader>tp", ":tabp<CR>", {desc = "prev tab"})
 --keymap.set("n", "<Down>", "<Nop>")
 --keymap.set("n", "<Left>", "<Nop>")
 --keymap.set("n", "<Right>", "<Nop>")
+
